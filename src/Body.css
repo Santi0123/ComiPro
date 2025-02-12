@@ -1,0 +1,75 @@
+.body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 64px); /* Resta la altura del AppBar */
+    background-color: #f3f4f6;
+    padding: 2rem;
+    width: 100%;
+}
+
+/* Filtro fijo en la parte superior */
+.filtros {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.accordion {
+    background-color: #082E4D;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.accordion:hover {
+    background-color: #064074;
+}
+
+.panel {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.panel label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Contenedor de la lista */
+.comida-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Diseño del grid de comidas */
+.comida-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste dinámico */
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
